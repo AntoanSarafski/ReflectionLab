@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ReflectionLab;
+using System;
+using TypeClass.ReflectionNamespace;
 
 namespace TypeClass
 {
@@ -6,16 +8,33 @@ namespace TypeClass
     {
         static void Main(string[] args)
         {
-            Type type = typeof(Console);
 
-            Console.WriteLine(type.FullName);
-            Console.WriteLine(type.Name);
-            Console.WriteLine(type.Assembly);
-            Console.WriteLine(type.IsArray);
-            Console.WriteLine(type.IsAbstract);
-            Console.WriteLine(type.IsClass);
-            Console.WriteLine(type.IsInterface);
-            Console.WriteLine(type.IsPublic);
+
+            PrintTypeInfo(new Mouse());
+            PrintTypeInfo(new Laptop());
+            void PrintTypeInfo(Product product)
+            {
+                Type type = product.GetType();
+
+                Console.WriteLine($"FullName:{type.FullName}");
+                Console.WriteLine($"Name:{type.Name}");
+                Console.WriteLine($"Assembly:{type.Assembly}");
+                Console.WriteLine($"IsArray:{type.IsArray}");
+                Console.WriteLine($"IsAbstract:{type.IsAbstract}");
+                Console.WriteLine($"IsClass:{type.IsClass}");
+                Console.WriteLine($"IsInterface:{type.IsInterface}");
+                Console.WriteLine($"IsPublic:{type.IsPublic}");
+            }
+
         }
     }
+    namespace ReflectionNamespace
+    {
+
+        public class Reflected
+        {
+
+        }
+    }
+
 }
