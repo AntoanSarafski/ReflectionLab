@@ -13,6 +13,10 @@ namespace ReflectionLab
 
             PrintProperties(typeof(DateTime), DateTime.Now);
 
+            PrintProperties(typeof(Random), new Random());
+
+
+
 
             void PrintProperties(Type type, object obj)
             {

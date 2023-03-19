@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33328.57
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionLab", "ReflectionLab\ReflectionLab.csproj", "{3AD4FAC6-07E1-4A1B-A5E2-F9832A64DBCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReflectionLab", "ReflectionLab\ReflectionLab.csproj", "{3AD4FAC6-07E1-4A1B-A5E2-F9832A64DBCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeClass", "TypeClass\TypeClass.csproj", "{3DDF2CB9-DE70-412B-841A-C99061EF9DCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3AD4FAC6-07E1-4A1B-A5E2-F9832A64DBCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AD4FAC6-07E1-4A1B-A5E2-F9832A64DBCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AD4FAC6-07E1-4A1B-A5E2-F9832A64DBCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DDF2CB9-DE70-412B-841A-C99061EF9DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DDF2CB9-DE70-412B-841A-C99061EF9DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DDF2CB9-DE70-412B-841A-C99061EF9DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DDF2CB9-DE70-412B-841A-C99061EF9DCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
