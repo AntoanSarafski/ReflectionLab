@@ -13,6 +13,7 @@ namespace ReflectionLab
 
         public decimal Price { get; set; }
 
+        public string CPUModel { get; set; }
 
         public void Start()
         {

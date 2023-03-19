@@ -9,11 +9,22 @@ namespace ReflectionLab
         {
             Type type = typeof(Laptop);
 
-            PropertyInfo[] properties = type.GetProperties();
+            PrintProperties(typeof(Laptop));
 
-            foreach (var property in properties)
+            PrintProperties(typeof(Mouse));
+
+            void PrintProperties(Type type)
             {
-                Console.WriteLine(property.Name);
+                Console.WriteLine("\n---------");
+                Console.WriteLine(type.Name);
+                Console.WriteLine("---------");
+
+                PropertyInfo[] properties = type.GetProperties();
+
+                foreach (var property in properties)
+                {
+                    Console.WriteLine(property.Name);
+                }
             }
         }
     }
