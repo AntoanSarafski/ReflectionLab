@@ -7,13 +7,14 @@ namespace ReflectionLab
     {
         static void Main(string[] args)
         {
-            Type type = typeof(Laptop);
+            PrintProperties(typeof(Laptop), new Laptop() { Id = 1, Price = 100, Cores = 8, CPUModel = "Cheap"});
 
-            PrintProperties(typeof(Laptop));
+            PrintProperties(typeof(Mouse), new Mouse() { Id = 1, Price = 100, Precision = 8, Model = "Expensive" });
 
-            PrintProperties(typeof(Mouse));
+            PrintProperties(typeof(DateTime), DateTime.Now);
 
-            void PrintProperties(Type type)
+
+            void PrintProperties(Type type, object obj)
             {
                 Console.WriteLine("\n---------");
                 Console.WriteLine(type.Name);
@@ -23,7 +24,7 @@ namespace ReflectionLab
 
                 foreach (var property in properties)
                 {
-                    Console.WriteLine(property.Name);
+                    Console.WriteLine($"{property.Name} - {property.GetValue(obj)}");
                 }
             }
         }
