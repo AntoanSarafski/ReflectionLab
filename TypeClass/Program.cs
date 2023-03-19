@@ -10,11 +10,15 @@ namespace TypeClass
         {
 
 
-            PrintTypeInfo(new Mouse());
-            PrintTypeInfo(new Laptop());
-            void PrintTypeInfo(Product product)
+            //PrintTypeInfo(new Mouse());
+            //PrintTypeInfo(new Laptop());
+
+            Type type = (Type.GetType(Console.ReadLine()));
+            PrintTypeInfo(type);
+            void PrintTypeInfo(Type type)
+
             {
-                Type type = product.GetType();
+                //Type type = product.GetType();
 
                 Console.WriteLine($"FullName:{type.FullName}");
                 Console.WriteLine($"Name:{type.Name}");
