@@ -6,16 +6,16 @@ namespace TypeClass
 {
     public class Product
     {
-        public int Id { get; set; }
+        public int id;
 
-        public int Model { get; set; }
+        public int model;
 
-        public int Price { get; set; }
+        public int price;
 
-        public int field1 { get; set; }
+        public int field1;
 
-        public int field2 { get; set; }
+        public int field2;
 
-        public int field365 { get; set; }
+        public int field365;
     }
 }
