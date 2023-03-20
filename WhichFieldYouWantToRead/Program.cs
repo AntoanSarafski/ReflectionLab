@@ -24,9 +24,17 @@ namespace WhichFieldYouWantToRead
                 Console.WriteLine("Which field you want to read?");
                 string fieldName = Console.ReadLine();
 
+                
                 Type type = typeof(Product);
+                
                 FieldInfo field = type.GetField(fieldName);
+
+                if (field == null) continue;
+
                 Console.WriteLine(field.GetValue(product));
+
+                field.SetValue(product, (int)field.GetValue(product) + 1);
+
             }
 
         }
