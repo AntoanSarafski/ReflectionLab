@@ -6,11 +6,11 @@ namespace TypeClass
 {
     public class Product
     {
-        private int id;
+        public int id;
 
-        private decimal price;
+        public decimal price;
 
-        private string model;
+        public string model;
 
         public int Id { get; set; }
 
