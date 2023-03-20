@@ -7,7 +7,7 @@ namespace EnumBinary
         static void Main(string[] args)
         {
 
-            Days promotion = Days.Monday | Days.Tuesday;
+            Days promotion = Days.Monday | Days.Tuesday;  // Gruop two days ! 
 
 
             if (promotion.HasFlag(Days.Monday))
