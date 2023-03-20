@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReflectionLab", "Reflection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeClass", "TypeClass\TypeClass.csproj", "{3DDF2CB9-DE70-412B-841A-C99061EF9DCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldsReflection", "FieldsReflection\FieldsReflection.csproj", "{1E3913A3-876E-4D6B-8F5E-7757485B38D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3DDF2CB9-DE70-412B-841A-C99061EF9DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DDF2CB9-DE70-412B-841A-C99061EF9DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DDF2CB9-DE70-412B-841A-C99061EF9DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E3913A3-876E-4D6B-8F5E-7757485B38D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E3913A3-876E-4D6B-8F5E-7757485B38D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E3913A3-876E-4D6B-8F5E-7757485B38D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E3913A3-876E-4D6B-8F5E-7757485B38D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
