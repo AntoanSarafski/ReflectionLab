@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using TypeClass;
 
 namespace WhichFieldYouWantToRead
@@ -18,6 +19,15 @@ namespace WhichFieldYouWantToRead
 
             };
 
+            while (true)
+            {
+                Console.WriteLine("Which field you want to read?");
+                string fieldName = Console.ReadLine();
+
+                Type type = typeof(Product);
+                FieldInfo field = type.GetField(fieldName);
+                Console.WriteLine(field.GetValue(product));
+            }
 
         }
     }
