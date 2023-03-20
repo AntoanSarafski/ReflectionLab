@@ -22,32 +22,32 @@ namespace WhichFieldYouWantToRead
             while (true)
             {
                 Console.WriteLine("Which field you want to read?");
-                string fieldName = Console.ReadLine();
+                string propertyName = Console.ReadLine();
 
-                //try
-                //{
-                //    GetFieldValue(DateTime.Now, fieldName);
-                //}
-                //catch (Exception)
-                //{
+                try
+                {
+                    GetPropertyValue(DateTime.Now, propertyName);
+                }
+                catch (Exception)
+                {
 
-                //    Console.WriteLine("No Such Field");
-                //}
-                
+                    Console.WriteLine("No Such Property");
+                }
+
 
 
 
             }
 
-            void GetFieldValue(object obj, string fieldName)
+            void GetPropertyValue(object obj, string propertyName)
             {
 
                 Type type = obj.GetType();
 
-                FieldInfo field = type.GetField(fieldName);
+                PropertyInfo property = type.GetProperty(propertyName);
 
 
-                Console.WriteLine(field.GetValue(product));
+                Console.WriteLine(property.GetValue(obj));
 
                 //field.SetValue(product, (int)field.GetValue(product) + 1);
             }
