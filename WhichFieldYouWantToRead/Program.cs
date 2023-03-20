@@ -24,19 +24,35 @@ namespace WhichFieldYouWantToRead
                 Console.WriteLine("Which field you want to read?");
                 string fieldName = Console.ReadLine();
 
+                //try
+                //{
+                //    GetFieldValue(DateTime.Now, fieldName);
+                //}
+                //catch (Exception)
+                //{
+
+                //    Console.WriteLine("No Such Field");
+                //}
                 
-                Type type = typeof(Product);
-                
-                FieldInfo field = type.GetField(fieldName);
 
-                if (field == null) continue;
 
-                Console.WriteLine(field.GetValue(product));
-
-                field.SetValue(product, (int)field.GetValue(product) + 1);
 
             }
 
+            void GetFieldValue(object obj, string fieldName)
+            {
+
+                Type type = obj.GetType();
+
+                FieldInfo field = type.GetField(fieldName);
+
+
+                Console.WriteLine(field.GetValue(product));
+
+                //field.SetValue(product, (int)field.GetValue(product) + 1);
+            }
         }
     }
 }
+
+
