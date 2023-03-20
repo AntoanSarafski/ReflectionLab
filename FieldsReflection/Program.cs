@@ -10,9 +10,8 @@ namespace FieldsReflection
         {
             Type type = typeof(Product);
 
-            FieldInfo[] fields = type.GetFields();
+            FieldInfo field = type.GetField("id");
 
-            Console.WriteLine(fields.Length); // Thats the way to show us only PUBLIC fields.
 
         }
     }
