@@ -13,15 +13,15 @@ namespace ReflectionConstructor
 
             foreach (ConstructorInfo constructor in constructors)
             {
-                ParameterInfo[] parameters = constructor.GetParameters();
+                ParameterInfo[] parameters = constructor.GetParameters(); // That give us all parameters from current constructor
 
 
-                object[] paramValues = new object[parameters.Length];
+                object[] paramValues = new object[parameters.Length]; // This is our saved paramters
 
                 int index = 0;
                 foreach (ParameterInfo paramInfo in parameters)
                 {
-                    paramValues[index++] = GetDefault(paramInfo.ParameterType);
+                    paramValues[index++] = GetDefault(paramInfo.ParameterType); // Give me deffault value of paramteres and set deffault value with GetDefault method.
                 }
 
                 Product product = Activator.CreateInstance(type, paramValues) as Product;
