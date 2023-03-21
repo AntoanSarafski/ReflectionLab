@@ -14,10 +14,16 @@ namespace ActivatorCreateInstance
             Model = model;
         }
 
-        //public Product()
-        //{
+        public Product(int id, string model)
+        {
+            Id = id;
+            Model = model;
+        }
 
-        //}
+        public Product()
+        {
+
+        }
         public int Id { get; set; }
         public decimal Price { get; set; }
 
