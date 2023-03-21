@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionProperties", "Ref
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActivatorCreateInstance", "ActivatorCreateInstance\ActivatorCreateInstance.csproj", "{A39FFC8D-A267-4DAC-8DF5-160D649BC232}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionConstructor", "ReflectionConstructor\ReflectionConstructor.csproj", "{86A9CDC8-B5BE-4382-8CF8-26A599BFFB4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{A39FFC8D-A267-4DAC-8DF5-160D649BC232}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A39FFC8D-A267-4DAC-8DF5-160D649BC232}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A39FFC8D-A267-4DAC-8DF5-160D649BC232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86A9CDC8-B5BE-4382-8CF8-26A599BFFB4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A9CDC8-B5BE-4382-8CF8-26A599BFFB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A9CDC8-B5BE-4382-8CF8-26A599BFFB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A9CDC8-B5BE-4382-8CF8-26A599BFFB4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
