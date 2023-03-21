@@ -7,26 +7,29 @@ namespace EnumBinary
         static void Main(string[] args)
         {
 
-            Days promotion = Days.Monday | Days.Tuesday;  // Gruop two days ! 
+            Days promotion = Days.Thursday | Days.Saturday | Days.Sunday;  // Gruop many days ! 
 
 
-            if (promotion.HasFlag(Days.Monday))
+            if (promotion.HasFlag(Days.Thursday))
             {
-                Console.WriteLine("Monday Promotion");
+                Console.WriteLine("Thursday Promotion"); // int.Promotion = 8
             }
 
 
-            if (promotion.HasFlag(Days.Tuesday))
+            if (promotion.HasFlag(Days.Saturday))
             {
-                Console.WriteLine("Tuesday Promotion");
+                Console.WriteLine("Saturday Promotion"); // int.Promotion = 32
             }
+            // Sunday int.Promotion = 64
+            Console.WriteLine((int)promotion); // Group int.Promotion = 104
+            Console.WriteLine(8 | 32 | 64 );   // The same result - 104
 
 
         }
 
         enum Days
         {
-            Monday = 0,
+            Monday = 1,
             Tuesday = 2,
             Wednesday = 4,
             Thursday = 8,

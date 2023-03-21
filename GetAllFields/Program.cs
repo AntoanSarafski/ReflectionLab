@@ -10,11 +10,13 @@ namespace GetAllFields
 
             Type type = typeof(Product);
 
-            FieldInfo[] fields = type.GetFields(
-                BindingFlags.NonPublic
+            
+            BindingFlags allFields = BindingFlags.NonPublic
                 | BindingFlags.Instance
                 | BindingFlags.Static
-                | BindingFlags.Public);
+                | BindingFlags.Public;
+
+            FieldInfo[] fields = type.GetFields(allFields);
 
             foreach (FieldInfo field in fields)
             {
