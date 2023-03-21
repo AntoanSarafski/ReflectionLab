@@ -1,12 +1,15 @@
-﻿using System;
+﻿using ActivatorCreateInstance;
+using System;
 
 namespace ReflectionConstructor
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Type type = typeof(Product);
+
+            Product product = (Product)Activator.CreateInstance(type); // That will give exception, cuz we dont have deffault(empty) constructor in Product Class ! 
         }
     }
 }
