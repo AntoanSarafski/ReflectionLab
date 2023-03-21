@@ -12,6 +12,14 @@ namespace ActivatorCreateInstance
 
             Console.WriteLine(rand.Next());
             Console.WriteLine(rand2.Next());
+
+            DateTime date = (DateTime)InstanceCreator(typeof(DateTime));
+            Console.WriteLine(date.ToString());
+
+            object InstanceCreator(Type type)                         // We can create dynamic any objects of any types.
+            {
+                return Activator.CreateInstance(type);
+            }
         }
     }
 }
